@@ -1,5 +1,5 @@
-print(input("Enter your monthly income: 5000"))
-print(input("Enter your monthly expenses: 4000"))
+input("Enter your monthly income: 5000")
+input("Enter your monthly expenses: 4000")
 print("Your monthly savings are $1000")
 print("Projected savings after one year , with interest, is: $12600")
 monthly income = 5000
