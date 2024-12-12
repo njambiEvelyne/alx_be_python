@@ -11,5 +11,5 @@ I = P * R * T
 interest = principal * rate * time
 1000 * 0.05 * 3 = 150.0
 interest = 150.0
-print("The simple interest is: {interest}")
+print("The simple interest is: 150.0")
 
