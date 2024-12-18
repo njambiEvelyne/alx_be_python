@@ -4,10 +4,10 @@ num1 = int(input("Enter the first number:"))
 #Prompt for the second number
 num2 = int(input("Enter the second number:"))
 
-operator = input("Choose the operation (+,-,*, /)") 
+operation = input("Choose the operation (+,-,*, /)") 
 
 #Performing of operations using the match case
-match operator:
+match operation:
   case "+":
     result = num1 + num2 
   case "-":
