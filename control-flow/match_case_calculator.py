@@ -18,8 +18,9 @@ match operator:
     if num2 != 0:
       result= num1 / num2
     else:
-      result = "Cannot divide by zero."
-  case _:
-    result = "Invalid Operator"
+      print("Cannot divide by zero.")
+      exit()
+ # case _:
+  #  result = "Invalid Operator"
 
 print(f"The result is {result}")    
