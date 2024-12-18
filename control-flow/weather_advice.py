@@ -1,5 +1,5 @@
 #weather = ["sunny", "rainy", "cold"]
-weather = input("What's the weather like today? (sunny/rainy/cold):")
+weather = input("What's the weather like today? (sunny/rainy/cold):").lower()
 
 #Avdvise for a sunny day
 if weather == "sunny":
