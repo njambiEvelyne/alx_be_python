@@ -1,9 +1,3 @@
-import os  
-
-def check_file_exists_and_not_empty(filename):  
-    """Check if the given file exists and is not empty."""  
-    return os.path.isfile(filename) and os.path.getsize(filename) > 0  
-
 def display_menu():  
     """Display the menu options for the shopping list manager."""  
     print("\nShopping List Manager")  
