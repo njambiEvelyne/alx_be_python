@@ -1,3 +1,9 @@
+import os  
+
+def check_file_exists_and_not_empty(filename):  
+    """Check if the given file exists and is not empty."""  
+    return os.path.isfile(filename) and os.path.getsize(filename) > 0  
+
 def display_menu():  
     """Display the menu options for the shopping list manager."""  
     print("\nShopping List Manager")  
@@ -8,6 +14,15 @@ def display_menu():
 
 def main():  
     shopping_list = []  # Implementation of an array (list) for storing shopping items  
+    
+    # Check if the shopping list file exists and is not empty (optional feature)  
+    filename = 'shopping_list.txt'  
+    if check_file_exists_and_not_empty(filename):  
+        print(f"File '{filename}' exists and is not empty.")  
+        # You could load the existing shopping list from this file if desired.  
+    else:  
+        print(f"File '{filename}' does not exist or is empty.")  
+
     while True:  
         display_menu()  # Calling the display_menu function  
         choice = input("Enter your choice (1-4): ")  
