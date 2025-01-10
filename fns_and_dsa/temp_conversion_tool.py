@@ -26,6 +26,8 @@ def main():
         try:
             # Prompt the user to enter the temperature to convert
             temp_input = input("Enter the temperature to convert (or type 'exit' to quit): ").strip()
+            
+            # Exit condition
             if temp_input.lower() == 'exit':
                 print("Exiting the program. Goodbye!")
                 break
@@ -48,7 +50,7 @@ def main():
                 raise ValueError("Invalid unit. Please specify 'C' for Celsius or 'F' for Fahrenheit.")
 
         except ValueError as e:
-            # Handle invalid inputs
+            # Handle invalid inputs with the specified message
             print(f"Error: {e}")
         except Exception as e:
             # Handle unexpected errors
@@ -57,5 +59,6 @@ def main():
             # Notify the user the loop is still active
             print("---")
 
+# Entry point of the script
 if __name__ == "__main__":
     main()
