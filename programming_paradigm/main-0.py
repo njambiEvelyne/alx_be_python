@@ -16,7 +16,7 @@ def main():
     # Parse the command and optional amount
     command, *params = sys.argv[1].split(':')
     amount = float(params[0]) if params else None
-
+     
     # Execute the appropriate operation
     if command == "deposit" and amount is not None:
         account.deposit(amount)
