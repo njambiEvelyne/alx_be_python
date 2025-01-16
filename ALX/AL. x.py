@@ -9,3 +9,5 @@ except ZeroDivisionError:
   print("Cannot divide by zero")
 else:
   print("Division successful")
+finally:
+  print("Attempt operation")
